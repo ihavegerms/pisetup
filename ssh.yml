@@ -2,8 +2,8 @@
 - hosts: pis
   user: root
   vars:
-    createuser: 'darren'
-    createpassword: 'darren79'
+    createuser: 'username'
+    createpassword: 'password'
   tasks:
   - name: Setup | create user
     command: useradd -m {{ createuser }} creates=/home/{{ createuser }}
